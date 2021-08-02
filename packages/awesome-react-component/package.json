@@ -1,0 +1,24 @@
+{
+  "name": "@namespace/awesome-component",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Awesome component",
+  "main": "dist/index",
+  "module": "dist/index",
+  "main:src": "src/index",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "../../scripts/clean.sh",
+    "lint": "eslint '**/*/*{ts,tsx}'",
+    "test": "jest",
+    "build": "yarn clean && ../../scripts/build-package.sh"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
+  },
+  "dependencies": {
+    "@namespace/common": "^0.0.1"
+  },
+  "devDependencies": {
+  }
+}

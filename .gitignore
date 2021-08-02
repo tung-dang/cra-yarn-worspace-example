@@ -8,7 +8,6 @@ node_modules
 # testing
 /coverage
 **/coverage
-**/*/coverage
 
 # production
 /build
@@ -24,10 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 credentials.json
-pagekite.py
-
-mynode.md
 tmp
 temp
-
-.vercel

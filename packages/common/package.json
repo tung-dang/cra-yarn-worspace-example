@@ -4,22 +4,18 @@
   "private": false,
   "description": "An package contains common functions",
   "main": "dist/index",
-  "module": "dist/index",
-  "module:2019": "dist/index",
   "main:src": "src/index",
+  "module": "dist/index",
   "types": "dist/index.d.ts",
   "scripts": {
+    "build": "yarn clean && ../../scripts/build-package.sh",
     "clean": "../../scripts/clean.sh",
     "lint": "eslint '**/*/*{ts,tsx}'",
-    "test": "jest",
-    "build": "yarn clean && ../../scripts/build-package.sh"
+    "test": "jest"
   },
-  "peerDependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "dependencies": {
-  },
-  "devDependencies": {
-  }
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "main:src": "src/index",
+  "module:2019": "dist/index"
 }

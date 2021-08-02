@@ -1,10 +1,10 @@
 {
-  "name": "@jd/root",
+  "name": "@namespace/root",
   "version": "0.0.1",
   "private": true,
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/tung-dang/cra-yarn-worspace-example"
   },
   "license": "MIT",
   "author": "Tung Dang",
@@ -15,7 +15,6 @@
     ]
   },
   "scripts": {
-    "build:conf-connect-macro-app": "./scripts/build-conf-connect-macro-app.sh",
     "build:devyeet-app": "./scripts/build-dev-yeet-app.sh",
     "build:packages": "./scripts/build-packages.sh",
     "clean": "./scripts/clean.sh && yarn workspaces run clean",
@@ -25,15 +24,9 @@
     "run:ts-task": "yarn ts-node -O '{\"module\":\"commonjs\"}'",
     "start:deploy": "./scripts/update-green-branch.sh",
     "storybook": "start-storybook -p 6006",
-    "test": "TZ=UTC CI=true yarn workspaces run test --watchAll=false --passWithNoTests"
+    "test": "TZ=UTC yarn workspaces run test --watchAll=false --passWithNoTests"
   },
-  "dependencies": {
-    "lodash": "^4.17.21",
-    "react": "^17.0.2",
-    "react-app-polyfill": "^2.0.0",
-    "react-color-palette": "^6.1.0",
-    "react-dom": "^17.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.14.5",
     "@babel/core": "^7.14.6",
@@ -97,6 +90,7 @@
     "jest-resolve": "26.6.0",
     "jest-watch-typeahead": "0.6.1",
     "lint-staged": "^11.0.1",
+    "lodash": "^4.17.21",
     "mini-css-extract-plugin": "0.11.3",
     "optimize-css-assets-webpack-plugin": "5.0.4",
     "parse-duration": "^1.0.0",
@@ -107,7 +101,9 @@
     "postcss-preset-env": "6.7.0",
     "postcss-safe-parser": "5.0.2",
     "prompts": "2.4.0",
+    "react": "^17.0.2",
     "react-dev-utils": "^11.0.3",
+    "react-dom": "^17.0.2",
     "react-refresh": "^0.8.3",
     "react-scripts": "^4.0.3",
     "react-test-renderer": "^17.0.2",

@@ -1,6 +1,7 @@
 const path = require('path');
 const { lstatSync, readdirSync } = require('fs');
 
+const PACKAGE_NAME_SPACE = '@namespace';
 const ROOT_REPO = path.resolve(__dirname);
 const ROOT_JEST_CONFIG_FOLDER = `${ROOT_REPO}/config/jest`;
 
@@ -11,7 +12,6 @@ const packages = readdirSync(PACKAGE_FOLDER).filter((name) => {
 
   return lstatSync(packageFolders).isDirectory();
 });
-const PACKAGE_NAME_SPACE = '@jd';
 
 const moduleNameMapper = {
   ...packages.reduce(
