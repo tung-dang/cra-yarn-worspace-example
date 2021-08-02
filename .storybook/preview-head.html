@@ -1,0 +1,126 @@
+<!-- .storybook/preview-head.html -->
+
+<!-- Pull in static files served from your Static directory or the internet -->
+
+<!-- <link rel=”preload” href=”your/font” /> -->
+
+<!-- Or you can load custom head-tag JavaScript: -->
+
+<!-- <script src="https://use.typekit.net/xxxyyy.js"></script>
+<script>try{ Typekit.load(); } catch(e){ }</script> -->
+<style type="text/css">
+  /**********************************************************/
+  /* This file is used for styling table in storybook only */
+  /**********************************************************/
+
+  table.aui {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  table.aui table.aui {
+    margin: 0;
+  }
+  table.aui > caption {
+    color: #7a869a;
+    background: #f4f5f7;
+    border-bottom: 1px solid #dfe1e6;
+    caption-side: top;
+    padding: 7px 10px;
+    text-align: left;
+  }
+  table.aui > thead > tr > th,
+  table.aui > tbody > tr > th,
+  table.aui > tfoot > tr > th,
+  table.aui > thead > tr > td,
+  table.aui > tbody > tr > td,
+  table.aui > tfoot > tr > td {
+    padding: 7px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.aui > thead > tr > th > ul.menu,
+  table.aui > tbody > tr > th > ul.menu,
+  table.aui > tfoot > tr > th > ul.menu,
+  table.aui > thead > tr > td > ul.menu,
+  table.aui > tbody > tr > td > ul.menu,
+  table.aui > tfoot > tr > td > ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  table.aui > thead > tr > th > ul.menu > li,
+  table.aui > tbody > tr > th > ul.menu > li,
+  table.aui > tfoot > tr > th > ul.menu > li,
+  table.aui > thead > tr > td > ul.menu > li,
+  table.aui > tbody > tr > td > ul.menu > li,
+  table.aui > tfoot > tr > td > ul.menu > li {
+    float: left;
+    margin: 0 10px 0 0;
+    width: auto;
+  }
+  table.aui > tbody > tr,
+  table.aui > tfoot > tr {
+    background: #ffffff;
+    color: #172b4d;
+  }
+  table.aui > tbody > tr:first-child > td,
+  table.aui > tfoot > tr:first-child > td,
+  table.aui > tbody > tr:first-child > th,
+  table.aui > tfoot > tr:first-child > th {
+    border-top: 1px solid #dfe1e6;
+  }
+  table.aui > thead {
+    border-bottom: 2px solid #dfe1e6;
+  }
+  table.aui > thead > tr > th {
+    color: #7a869a;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.66666667;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+  table.aui > tbody > tr > th {
+    color: #7a869a;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.66666667;
+    letter-spacing: 0;
+    text-transform: none;
+    font-size: inherit;
+    background: #ffffff;
+  }
+  table.aui .aui-button-link {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: inherit;
+    height: auto;
+    border: 0;
+  }
+  table.aui:not(.aui-table-list) > tbody > tr > th,
+  table.aui:not(.aui-table-list) > tfoot > tr > th,
+  table.aui:not(.aui-table-list) > tbody > tr > td,
+  table.aui:not(.aui-table-list) > tfoot > tr > td {
+    border-bottom: 1px solid #dfe1e6;
+  }
+  /* Tables for lists of data */
+  table.aui.aui-table-list > tbody > tr:hover,
+  table.aui.aui-table-interactive > tbody > tr:hover,
+  table.aui.aui-table-list > tbody > tr:focus-within,
+  table.aui.aui-table-interactive > tbody > tr:focus-within {
+    background: rgba(9, 30, 66, 0.08);
+  }
+  table.aui.aui-table-list > tbody > tr.aui-row-subtle *,
+  table.aui.aui-table-interactive > tbody > tr.aui-row-subtle * {
+    color: #b3bac5;
+  }
+  table.aui.aui-table-list > tbody > tr.aui-row-subtle * .aui-avatar,
+  table.aui.aui-table-interactive > tbody > tr.aui-row-subtle * .aui-avatar,
+  table.aui.aui-table-list > tbody > tr.aui-row-subtle * .aui-icon,
+  table.aui.aui-table-interactive > tbody > tr.aui-row-subtle * .aui-icon,
+  table.aui.aui-table-list > tbody > tr.aui-row-subtle * .aui-button,
+  table.aui.aui-table-interactive > tbody > tr.aui-row-subtle * .aui-button {
+    opacity: 0.8;
+  }
+
+</style>

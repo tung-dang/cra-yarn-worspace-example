@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    // optimised
+    "removeComments": true,
+    // non-strict rules
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitAny": false,
+    "allowUnreachableCode": true,
+    "alwaysStrict": false,
+    "strict": false,
+    // strict rules
+    "suppressImplicitAnyIndexErrors": true,
+    "noImplicitReturns": false,
+    "noImplicitThis": true,
+    // other
+    "isolatedModules": true,
+    "allowJs": true,
+    "checkJs": false,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "resolveJsonModule": true,
+    // good pratice
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    // "paths": {
+    //   "@jd/common/*": ["packages/common/src/*"],
+    // },
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+  },
+  "typeRoots": [
+    "node_modules/@types",
+  ],
+  "exclude": [
+    "node_modules",
+    "**/node_modules",
+    "build",
+    "**/build",
+    "dist",
+    "**/dist",
+    "scripts",
+    "jest",
+    "__tests__",
+    "**/__tests__",
+    "__jest__",
+    "**/__jest__",
+    "config/*"
+  ]
+}
